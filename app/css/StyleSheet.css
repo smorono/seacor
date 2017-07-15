@@ -1,0 +1,104 @@
+.navbar {
+   margin: 2px;
+   margin-right:4px;
+   padding: 1px;
+}
+
+.splash_screen {
+	position: absolute;
+	left: 310px;
+	height: 92%;
+	width: 75%;
+	padding-left: 20%;
+	padding-top: 10%;
+    border: 1px solid black;
+}
+
+.welcome_message{
+	position: absolute;
+	margin-left: 8px;
+	height: 92%;
+	width: 300px;
+	text-align: center;
+	padding: 4px;
+    border: double black;
+}
+
+.floor_plan{
+	position: absolute;
+	margin-left: 8px;
+	height: 82%;
+	width: 300px;
+	text-align: center;
+	padding: 4px;
+    border: double black;
+}
+
+.bottom_button {
+  	position: absolute;
+  	bottom: 7px;
+  	margin-left:8px;
+	padding-left: 80px;
+	width: 98%;
+}
+
+#view_port {
+	position: absolute;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	margin-left: 310px;
+	height: 82%;
+    border: 1px solid black;
+	width: 76%;
+}
+
+#properties {
+ 	position: absolute;
+	margin-top: 0%;
+ 	height: 82%;
+ 	left: 4px;
+	padding: 2px 2px;
+ 	width: 304px;
+	text-align:center;
+    font-style:italic;
+    border: double black;
+ }
+
+sup { vertical-align: top; font-size: 0.6em; }
+#slider_shell {
+	width:310px;
+	padding: 10px;
+    border: 0px solid black;
+}
+
+#slider {
+	padding: 2px;
+    border: 1px solid black;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left:10px;
+  margin-right:8px;
+  margin-bottom: 4px;
+  padding: 2px 2px 2px 2px;
+  background-color: #efefef;
+  text-align: center;
+  border: 0px solid black;
+}
+
+.overheadxx {
+	position: absolute;
+	left: 310px;
+	height: 82%;
+	width: 76%;
+	padding-left: 20%;
+    border: 2px solid navy;
+    overflow: auto;
+}
+
+

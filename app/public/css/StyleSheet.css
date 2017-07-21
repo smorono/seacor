@@ -1,27 +1,69 @@
+li {
+    margin-bottom: 5px;
+}
+
+.hr {
+	color: black;
+}
+
 .navbar {
    margin: 2px;
    margin-right:4px;
    padding: 1px;
 }
 
-.splash_screen {
+.select_project{
+	float: left;
+	font-weight: bold;
+}
+
+.parent{
 	position: absolute;
-	left: 310px;
-	height: 92%;
-	width: 75%;
-	padding-left: 20%;
-	padding-top: 10%;
-    border: 1px solid black;
+	height: 90%;
+	width: 100%;
+	padding: 1px;
+    border: 0px black;
 }
 
 .welcome_message{
-	position: absolute;
-	margin-left: 8px;
-	height: 92%;
-	width: 300px;
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 22%;
 	text-align: center;
 	padding: 4px;
-    border: double black;
+    border: 0px black;
+}
+
+#splash_info {
+	padding-right: 20px;
+}
+
+.splash_screen {
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 77.5%;
+    border: 0px solid black;
+}
+
+#properties {
+    border-radius: 6px;
+    border: 0px solid black;
+    padding: 2px;
+}
+
+.file_list {
+	border: 0px solid black;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+
+#contractor_box {
+	position: absolute;
+	top: 50%;
+	left: 64%;
 }
 
 .floor_plan{
@@ -53,17 +95,6 @@
 	width: 76%;
 }
 
-#properties {
- 	position: absolute;
-	margin-top: 0%;
- 	height: 82%;
- 	left: 4px;
-	padding: 2px 2px;
- 	width: 304px;
-	text-align:center;
-    font-style:italic;
-    border: double black;
- }
 
 sup { vertical-align: top; font-size: 0.6em; }
 #slider_shell {

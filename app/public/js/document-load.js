@@ -7,6 +7,7 @@ $( document ).ready(function() {
     $("#welcome_message").load("side_welcome.html"); 
     $("#floor_plan").load("floor_plan.html"); 
     $("#bottom_button").load("bottom_button.html");
+    $("#splash").load("splash.html");
     console.log('Html Files Loaded') 
     
 /* Show/Hide what we need                           */

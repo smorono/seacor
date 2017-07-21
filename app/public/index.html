@@ -14,7 +14,7 @@
 	<script src="js/click_functions.js"></script>
 	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" type ="text/css" href="css/StyleSheet.css" />
+	<link rel="stylesheet" href="css/StyleSheet.css" />
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -26,15 +26,13 @@
 			<div id ="header"></div>
   		</div>
 	</nav>
-	<div id="splash_screen" class="splash_screen">
-		<img src='img/cube2.png' alt=''><br>
-		<img src='img/cube3.png' alt=''><br>
-		<!--img src='img/seacor.png' alt=''-->
+	<div class="parent">
+		<div id="splash" class="splash_screen"></div>
+		<div id="view_port"><canvas id="draw_canvas"></canvas></div>
+		<div id="welcome_message" class="welcome_message"></div>
+		<div id="floor_plan" class="floor_plan"></div>
+	<!--div id="bottom_button" class="bottom_button"></div-->
 	</div>
-	<div id="view_port"><canvas id="draw_canvas"></canvas></div>
-	<div id="welcome_message" class="welcome_message"></div>
-	<div id="floor_plan" class="floor_plan"></div>
-	<div id="bottom_button" class="bottom_button"></div>
 	<script type="text/javascript" src="js/click_functions.js"></script>
 </body>
 </html>

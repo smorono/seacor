@@ -20,6 +20,7 @@ var view_json;
 /*      Show Floorplan and View Port DIVs 	*/
 		$('#welcome_message').hide();
 		$('#splash_screen').hide();
+		$('#splash').hide();
 		$('#floor_plan').show();
 		$('#view_port').show();
 

@@ -60,3 +60,70 @@ function drawGrid () {
 	canvas.renderAll();
 }
 
+function addProject(new_project) {
+	var projects = JSON.parse(localStorage.getItem('projectData'));
+
+/*  Add the new project to the array, JSON parse returns a Array     */
+	projects['project'].push({"address":new_project});
+
+/*  Stringify converts the JSON Object into a string for storage      */	
+	var JSONProjects = JSON.stringify(projects);
+	localStorage.setItem('projectData', JSONProjects);
+	updateProjectList();
+}
+
+function deleteProject(projectIndex) {
+	var projects = JSON.parse(localStorage.getItem('projectData'));
+
+/*  Delete the project from the array, JSON parse returns a Array     */
+//	projects['project'].pop({"ad//dress":project});
+	projects['project'].splice(projectIndex, 1);
+
+/*  Stringify converts the JSON Object into a string for storage      */	
+	var JSONProjects = JSON.stringify(projects);
+	localStorage.setItem('projectData', JSONProjects);
+	updateProjectList();
+}
+
+function updateProjectList() {
+/*   Get the project data as a array                                   */
+    var result = JSON.parse(localStorage.getItem('projectData'));
+
+/*  Clear the project list                                             */
+    $("#project_list").empty();
+	setupAddressList();
+}
+
+function deleteConfirmed () {
+	var radioValue = $("input[name='optradio']:checked").val();
+	deleteProject(radioValue);
+	$("#btn_delete_project").prop("disabled", true);
+}
+
+function setupAddressList() {
+    var result = JSON.parse(localStorage.getItem('projectData'));
+    var x;
+    for (x in result.project) {
+        $("#project_list").append("<li class='radio'><label><input type='radio' name='optradio' value=" + x + ">" 
+            + result.project[x].address + "</label></li>");
+     }
+
+/* Add eventlistners for radio button                   */
+/* Address selected - Enable the Delete Button -        */
+    $('input:radio[name=optradio]').change(function() {
+        $("#btn_delete_project").prop("disabled", false);
+    });
+}
+
+/* Store the project information in local storage on the local machine */
+/* Just a tempoary function to init the local storage, not usedmuch    */
+function makeJSON () {
+	var myObj = new Object();
+	myObj = {
+		"project" : [
+			{"address":"1224 E. Trent Ave"}, {"address" : "273 Fairport Road"}
+		]
+	};
+	myJSON = JSON.stringify(myObj);
+	localStorage.setItem('projectData', myJSON);
+}

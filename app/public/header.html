@@ -1,14 +1,20 @@
-    <button id="btn_floorplan" class="btn btn-default navbar-btn">Floorplan</button>
-    <button id="btn_overhead_view" class="btn btn-default navbar-btn">Overhead View</button>
-    <button id="btn_side_view" class="btn btn-default navbar-btn">Side View</button>
-    <button id="btn_materials" class="btn btn-default navbar-btn">Materials</button>
-    <button id="btn_windows" class="btn btn-default navbar-btn">Labor</button>
-    <button id="btn_cabinet" class="btn btn-default navbar-btn">Sevices</button>
-    <button id= "btn_appliances" class="btn btn-default navbar-btn">Invoice</button>
-    <button class="btn btn-default navbar-btn">Schedule</button>
-    <button class="btn btn-default navbar-btn">Status</button>
-   
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+ <nav class="navbar navbar-left" id="header-bar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+        <li><a class="navbar-brand" href="index.html">SeaCor Systems<sup style="font-size: 60%;vertical-align: super;">&copy;</sup></a></li>
+        <li><input type="text" class="new_project" id="new-project"></li>
+        <li><div id="header_buttons">
+            <button id="btn_new_project" class="btn btn-primary btn-xs" type="button" value="New" >New</button> 
+            <button id="btn_delete_project" class="btn btn-primary btn-xs"  data-toggle="confirmation" disabled="true">     Delete</button>
+            <button id="btn_save_layout" class="btn btn-primary btn-xs" type="button" value="save_layout" disabled="true" data-toggle="modal" data-target="#myModal"> Save Layout</button>
+            <button id="btn_clear" class="btn btn-primary btn-xs" disabled="true"> 
+                Clear</button>
+            </div>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+  </div>
+</nav>

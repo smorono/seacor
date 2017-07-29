@@ -2,17 +2,21 @@ li {
     margin-bottom: 5px;
 }
 
-.hr {
-	color: black;
+#myModal {
+  padding: 0px;
+  margin-top:16%;
+  margin-left:40%;
+  width: 14%;
+  height: 20%;
 }
-
 .navbar {
    margin: 2px;
    margin-right:4px;
    padding: 1px;
 }
 
-.select_project{
+#select_project{
+	margin-top: 6px;
 	float: left;
 	font-weight: bold;
 }
@@ -47,6 +51,28 @@ li {
     border: 0px solid black;
 }
 
+.new_project {
+	visibility: hidden;	
+}
+
+#header_buttons {
+	border: 0px solid white;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left: 4px;
+}
+
+#header-bar {
+	height:36px;
+	padding:2px;
+}
+
+input[type="text"] {
+   	margin-top:15px;
+   	width: 180px;
+	height: 20px;
+}
+
 #properties {
     border-radius: 6px;
     border: 0px solid black;
@@ -54,10 +80,11 @@ li {
 }
 
 .file_list {
+	padding-left: 10px;
+	padding-top: 2px;
+	width: 280px;
 	border: 0px solid black;
 	text-align: left;
-	padding-left: 30px;
-	padding-top: 5px;
 }
 
 #contractor_box {
@@ -67,7 +94,7 @@ li {
 }
 
 .floor_plan{
-	position: absolute;
+	position: absolute
 	margin-left: 8px;
 	height: 82%;
 	width: 300px;
@@ -121,15 +148,3 @@ footer {
   text-align: center;
   border: 0px solid black;
 }
-
-.overheadxx {
-	position: absolute;
-	left: 310px;
-	height: 82%;
-	width: 76%;
-	padding-left: 20%;
-    border: 2px solid navy;
-    overflow: auto;
-}
-
-

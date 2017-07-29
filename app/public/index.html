@@ -6,6 +6,7 @@
 	<script src="js/fabric.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-confirmation.js"></script>
 	<script src="js/document-load.js"></script>
 	<script src="js/view_port.js"></script>
 	<script src="js/seacor-functions.js"></script>
@@ -15,24 +16,34 @@
 	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/StyleSheet.css" />
+	<link rel="shortcut icon" href="#" />
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
   		<div class="container-fluid">
-    		<div class="navbar-header">
-      			<a class="navbar-brand" href="index.html">SeaCor Systems
-      			<sup style="font-size: 60%;vertical-align: super;">&copy;</sup></a>
-    		</div>
 			<div id ="header"></div>
   		</div>
 	</nav>
 	<div class="parent">
 		<div id="splash" class="splash_screen"></div>
 		<div id="view_port"><canvas id="draw_canvas"></canvas></div>
-		<div id="welcome_message" class="welcome_message"></div>
+		<div id="select_project">
+			<img src='img/kitchen_layout2.png'><br />&nbsp; &nbsp;
+			Select A Project:<br>
+			<div class="file_list" id="project_list"></div>
+			<hr>
+		</div>
 		<div id="floor_plan" class="floor_plan"></div>
-	<!--div id="bottom_button" class="bottom_button"></div-->
 	</div>
+
+/* Modal Pop-up Box for saved layout message												*/
+<div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-content modal-class">
+        <p><strong>&nbsp; Layout Saved...</strong></p>
+        <p>&nbsp; <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Close</button></p>
+  </div>
+</div>
+
 	<script type="text/javascript" src="js/click_functions.js"></script>
 </body>
 </html>
